@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdn.tailwind.com"></script>
+ <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css">
     <title>Byway Category Page</title>
+    <style>
+body {
+  font-family: "futura", sans-serif;
+}
+</style>
   </head>
   <body>
     <!--Header Of Byway Category Page-->
     <header>
-      <nav>
-        <span>
+      <nav class="flex item-center justify-between p-1 border-b border-black-300 bg-white shadow-sm">
+
+
+      <div class="flex item-col gap-4">
+          <span class="ml-5">  
           <img src="image/byway logo.png" alt="" />
         </span>
-        <p>Byway</p>
-        <p Categories</p>
-        <p>Teach on Byway</p>
-        <i class='bx bx-heart'></i>
+        <p class="mt-3 pr-30">Byway</p>
+        <p class="mt-3">Categories</p>
+      </div>
+
+
+     <div class="mt-3">
+       <i class='bx bx-search-alt-2' class="absolute ml-3"></i> 
+        <input class="rounded-2xl w-96" type="text" name="" placeholder="Search courses" /> 
+     </div>
+        <p class="mt-3">Teach on Byway</p>
+
+       
+      <div class="mr-20 mt-3">
+          <i class='bx bx-heart'></i>
         <i class='bx bx-cart-alt'></i>
         <i class='bx bx-bell'></i>
-        <i class='bx bx-search-alt-2'></i><input  type="text" name="" placeholder="Search courses" />
+      </div>
+         
       </nav>
     </header>   
 
 
 <!--Main Of Byway Category Page-->
-    <main>
-  <section>
+     <main>
+  <section class="flex ">
          <h1>Design Courses</h1>
        <h5>All Development Courses</h5>
        <button <i class='bx bx-filter'></i>Filter</button> 
-       <span>Sort by</span>
-       <button <i class='bx bx-chevron-down'></i>Relevance</button>
+       <div class="mt-10 ml-2">
+        <span class="">Sort by</span>
+       <button class="" <i class='bx bx-chevron-down'></i>Relevance</button>
+       </div>
   </section>
 
 <section>
@@ -229,7 +255,7 @@
 
 
  <!--Footer Of Byway Category Page-->
-    <footer>
+    <!-- <footer>
         <div>
             <small>By way</small>
             <span>
@@ -267,7 +293,7 @@ Byway is a leading online learning platform dedicated to providing high-quality,
             <span><i class='bx bxl-twitter'></i></span>
             <span><i class='bx bxl-microsoft'></i></span>
         </div>
-    </footer>
+    </footer> -->
 
 
     
